@@ -57,11 +57,14 @@ export const appRoutes: Route[] = [
             (esModule) => (esModule.FeaturesModule)
         )
     },
-    // {
-    //     path:'meal/:id',
-    //     pathMatch:'full',
-    //     component: MealDetailComponent
-    // },
+    {
+        path:'user',
+       // pathMatch:'full',
+        loadChildren:() =>
+        import('@avans-nx-workshop/share-a-meal/features').then(
+            (esModule) => (esModule.FeaturesModule)
+        )
+    },
     {
         path:'about', 
         component:AboutComponent,
