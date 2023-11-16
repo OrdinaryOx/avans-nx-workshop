@@ -6,34 +6,6 @@ import { MealListComponent } from 'libs/share-a-meal/features/src/lib/meal/meal-
 import { MealDetailComponent } from 'libs/share-a-meal/features/src/lib/meal/meal-detail/meal-detail.component';
 import { AboutComponent } from 'libs/share-a-meal/features/src/lib/about/about.component';
 
-//  export const appRoutes: Route[] = [
-//  {
-//      path:'',
-//      component: NxWelcomeComponent,
-//      children: [
-   
-//          {
-//              path:'meals',
-//              pathMatch:'full',
-//              component: MealListComponent,
-//              children: [
-//                  {                
-//                  path:':id',
-//                  pathMatch: 'full',
-//                  component: MealDetailComponent,
-//              }           
-//              ],
-//          },
-//          {
-//              path:'about',
-//              pathMatch:'full',
-//              component: AboutComponent,
-//          }
-//      ]
-
-
-//  }
-//  ];
 
 
 export const appRoutes: Route[] = [
