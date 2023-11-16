@@ -36,7 +36,7 @@ const routes: Routes = [
 
 
 @NgModule({
-  imports: [RouterModule.forChild(routes), CommonModule, HttpClientModule],
+  imports: [RouterModule.forChild(routes), CommonModule, HttpClientModule, RouterModule],
   declarations: [MealListComponent, MealDetailComponent, AboutComponent],
   providers: [MealService],
   exports: [MealListComponent, MealDetailComponent],
