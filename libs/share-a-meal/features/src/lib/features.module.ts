@@ -36,14 +36,10 @@ const routes: Routes = [
 
 
 @NgModule({
-  imports: [RouterModule.forChild(routes), CommonModule, HttpClientModule],
-  declarations: [
-    MealListComponent,
-    MealDetailComponent,
-    MealListComponent,
-    AboutComponent,
-  ],
+  imports: [RouterModule.forChild(routes), CommonModule, HttpClientModule, RouterModule],
+  declarations: [MealListComponent, MealDetailComponent, AboutComponent],
   providers: [MealService],
   exports: [MealListComponent, MealDetailComponent],
 })
 export class FeaturesModule {}
+
