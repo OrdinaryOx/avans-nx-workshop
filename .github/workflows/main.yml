@@ -28,7 +28,7 @@ jobs:
           npm install
           npm run build --if-present
           npm run test --if-present
-#change cd ?
+
       - name: Zip artifacts for deployment
         run: |
           echo ${GITHUB_WORKSPACE}
@@ -61,7 +61,10 @@ jobs:
           name: share-a-meal-web
 
       - name: Unzip artifact for deployment
-        run: unzip share-a-meal-web-release.zip
+        run: |
+          unzip share-a-meal-web-release.zip
+          npm install --omit=dev
+        
         
       - name: Deploy to static azure web app
         id: builddeploy
