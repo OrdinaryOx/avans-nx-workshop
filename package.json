@@ -3,7 +3,7 @@
     "version": "0.0.0",
     "license": "MIT",
     "scripts": {
-        "build": "nx b data-api && nx b share-a-meal-web && echo 'Build!",
+        "build": "nx b data-api && nx b share-a-meal-web && echo 'Build!'",
         "test": "echo 'Test'"
     },
     "private": true,
